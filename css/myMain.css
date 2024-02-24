@@ -1,3 +1,4 @@
+/* **************************GLOBAL STYLES***************************/
 .bounce-top {
   display: block;
   -webkit-animation: bounce-top 2s infinite both;
@@ -105,14 +106,21 @@
   padding: 0;
 }
 
+/* **************************HTML ELEMENTS***************************/
+
 html {
   scroll-padding-top: 82px;
 }
 
 body {
   position: relative;
-  font-family: 'Work Sans', sans-serif;
-  background-color: #ebecf2;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: S00;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%) !important;
 }
 
 h2 {
@@ -125,102 +133,7 @@ h3 {
   font-weight: bold;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
-.underline {
-  margin: 0 auto 40px;
-  width: 60px;
-  height: 4px;
-  background-color: rgb(186,39,145);
-}
-
-.main-color-text {
-  color: rgb(186,39,145);
-}
-
-.facebook:hover {
-  color: rgb(89, 105, 249) !important;
-}
-
-.instagram:hover {
-  color: rgb(226, 123, 216) !important;
-}
-
-.social-media {
-  color: black !important;
-}
-
-.blue-text {
-  color: rgb(76,80,248);
-}
-
-.shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-nav {
-  text-transform: uppercase;
-  z-index: 1;
-}
-
-nav a, nav i {
-  color: #fff;
-}
-
-nav i {
-  padding: 5px;
-}
-
-nav a:hover {
-  font-weight: bold;
-}
-
-nav .fa-bars {
-  padding: 10px;
-}
-
-nav .active {
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: rgb(186,39,145);
-}
-
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-  line-height: 1 !important;
-}
-
-.nopadding-only {
-  padding: 0 !important;
-  line-height: 1 !important;
-}
-
-.nomargin {
-  margin: 0 !important;
-}
-
-.candidate-padding {
-  padding: 2 !important;
-  margin: 0 !important;
-  line-height: 1 !important;
-}
-
-.postulate-text {
-  vertical-align: middle;
-}
-
-nav .brand-frist {
-  font-size:2.2em !important;
-}
-
-nav .brand-second {
-  font-size:1.15em !important;
-}
+/* **************************HEADER***************************/
 
 header .home-first {
   font-size:4.2em !important;
@@ -228,14 +141,6 @@ header .home-first {
 
 header .home-second {
   font-size:2.25em !important;
-}
-
-.sticky {
-  background: rgba(46,46,46,0.9);
-}
-
-.sticky-text {
-  color: black !important;
 }
 
 header {
@@ -253,7 +158,7 @@ header p {
 
 header .hero-img {
   position: relative;
-  height: 100vh;
+  height: 60vh;
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
@@ -307,21 +212,55 @@ header .btn:hover {
   border-color: rgb(186,39,145);
 }
 
-.candidate .row {
-  background-color: rgb(217,217,222);
+/* **************************NAVIGATION***************************/
+
+nav {
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
 }
 
-.candidate-photo-container img {
-  height: 500px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  object-position: 20% 20%;
+nav a, nav i {
+  color: #fff;
 }
 
-.candidate-card {
-  background-color: rgb(255,255,255);
+nav i {
+  padding: 5px;
 }
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav .fa-bars {
+  padding: 10px;
+}
+
+nav .active {
+  font-weight: bold;
+}
+
+nav .nav-link:hover {
+  color: rgb(186,39,145);
+}
+
+nav .logo {
+  height: 160px;
+  width: 160px;
+}
+
+/* **************************FOOTER***************************/
+
+footer .footer-icon {
+  font-size: 1.5em;
+  color: black;
+}
+
+footer p {
+  color: black;
+}
+
+/* **************************INDEX-ABOUTUS***************************/
 
 .aboutus i {
   margin-top: 20px;
@@ -341,32 +280,65 @@ header .btn:hover {
   color: rgb(186,39,145);
 }
 
-.candidate .row {
-  background-color: rgb(217,217,222);
+.aboutus .img-container { 
+  overflow: hidden; 
 }
 
-.team .card-img-top {
-  max-height: 100%;
-  max-width: 100%;
+.aboutus .img-container img {
+  max-height: 400px;
+  width: 100%;
   object-fit: cover;
   display: block;
-  object-position: 10% 10%;
 }
 
-.contact-img {
-  max-height: 200px;
-  max-width: 50%;
-  object-fit: fill;
-  display: block;
-  object-position: 10% 10%;
+.aboutus h2 {
+font-size: 3rem;
+text-transform: none;
+color: rgb(79,82,96);
 }
 
-.press-card:hover{
-  -webkit-transform: scale(1.20);
-          transform: scale(1.20);
+.aboutus h3 {
+font-size: 1.05rem;
+text-transform: none;
+color: rgb(20,25,56);
 }
 
-.press-card {
+.aboutus h4 {
+font-size: 1.5rem;
+text-transform: none;
+color: rgb(20,25,56);
+font-weight: bold;
+}
+
+.aboutus p {
+font-size: 1.05rem;
+color: rgb(76, 83, 97);
+}
+
+.aboutus .pointer {
+  font-size: 1.2em !important;
+}
+
+.aboutus .pointer-margin {
+margin-left: 8px;
+}
+
+/* **************************COUNCILLORS-TEAM***************************/
+.team {
+  position: relative;
+  z-index: 0;
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+.team h2 {
+  color: black;
+}
+
+.team .candidate-card {
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+.team .candidate-card {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -378,157 +350,17 @@ header .btn:hover {
           transform: scale(0.95);
 }
 
-.team .candidate-card {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.postulate-text {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-}
-
-.img-container { 
-  overflow: hidden; 
-}
-
-.img-container img {
-  max-height: 400px;
-  width: 100%;
+.team .card-img-top {
+  max-height: 100%;
+  max-width: 100%;
   object-fit: cover;
   display: block;
+  object-position: 10% 10%;
 }
 
-.team {
-  position: relative;
-  z-index: 0;
-}
+/* **************************MAYOR-CANDIDATE***************************/
 
-.team h2 {
-  color: black;
-}
-
-.team .team-shadow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -1;
-}
-
-.team .card {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.logo {
-  height: 160px;
-  width: 160px;
-}
-
-.footer-icon {
-  font-size: 1.5em;
-  color: black;
-}
-
-.team .card i {
-  padding: 10px;
-}
-
-.team .card .card-title {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.team .card p {
-  text-align: center;
-}
-
-.team .card:hover {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
-.achievements i {
-  padding: 10px;
-  font-size: 48px;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-}
-
-.achievements .achievements-list {
-  padding: 20px 0;
-}
-
-.achievements .achievement-number {
-  font-size: 22px;
-}
-
-.achievements .achievement-text {
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.contact {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: 0;
-}
-
-.contact h2 {
-  color: black;
-  font-weight: bold;
-}
-
-.contact .contact-shadow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
-}
-
-.contact .contact-item {
-  margin: 30px 0;
-}
-
-.contact .contact-item h3 {
-  color: black;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.contact .contact-item p {
-  color: black;
-}
-
-.contact .contact-item a {
-  color: black;
-  padding: 10px;
-  font-size: 24px;
-}
-
-.postulate-text h3 {
-  font-size: 16px;
-}
-
-.contac-title {
-  font-size: 22px;
-}
-
-.details-img {
+.mayor .details-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -539,30 +371,151 @@ header .btn:hover {
   background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
 }
 
-.team {
-  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+.mayor h2 {
+font-size: 3rem;
+text-transform: none;
+color: rgb(79,82,96);
 }
 
-.index-start {
-  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%) !important;
+.mayor h3 {
+font-size: 1.05rem;
+text-transform: none;
+color: rgb(20,25,56);
 }
 
-.return-link {
+.mayor h4 {
+font-size: 1.5rem;
+text-transform: none;
+color: rgb(20,25,56);
+font-weight: bold;
+}
+
+.mayor p {
+font-size: 1.05rem;
+color: rgb(76, 83, 97);
+}
+
+.mayor .return-link {
   color: black;
   text-decoration: none;
 }
 
-.return-link:hover {
+.mayor .return-link h4:hover {
   color: rgb(186,39,145);
 }
 
-footer {
-  background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%) !important;
+/* **************************PRESS***************************/
+
+.press .press-card {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-footer .footer-text {
-  color: black;
+.press .press-card:hover{
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
+
+/* **************************CONTACT***************************/
+
+.contact .contact-img {
+  max-height: 200px;
+  max-width: 50%;
+  object-fit: fill;
+  display: block;
+  object-position: 10% 10%;
+}
+
+.contact {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.contact .contact-item {
+  margin: 30px 0;
+}
+
+.contact .contact-title {
+  font-size: 22px;
+}
+
+.contact a {
+  color: black;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.contact h2 {
+font-size: 3rem;
+text-transform: none;
+color: rgb(79,82,96);
+}
+
+.contact h3 {
+font-size: 1.05rem;
+text-transform: none;
+color: rgb(20,25,56);
+}
+
+.contact h4 {
+font-size: 1.5rem;
+text-transform: none;
+color: rgb(20,25,56);
+font-weight: bold;
+}
+
+.contact p {
+font-size: 1.05rem;
+color: rgb(76, 83, 97);
+}
+
+/* **************************OTHERS***************************/
+
+.facebook:hover {
+  color: rgb(89, 105, 249) !important;
+}
+
+.instagram:hover {
+  color: rgb(226, 123, 216) !important;
+}
+
+.social-media {
+  color: black !important;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: rgb(186,39,145);
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.nopadding-only {
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+.candidate-container {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/***************************MOBILE***************************/
 
 @media (min-width: 320px) {
   nav container {
@@ -595,9 +548,6 @@ footer .footer-text {
   .postulate-text h3 {
       font-size: 20px;
   }
-  .pointer {
-    font-size: 1.2em !important;
-  }
 }
 
 @media (min-width: 768px) {
@@ -618,12 +568,12 @@ footer .footer-text {
     max-height: 220px;
   }
   .pointer {
-    font-size: 1.2em !important;
+    font-size: 1.3em !important;
   }
 }
 
 @media (min-width: 992px) {
-  nav {
+  nav .container {
     height: 82px;
   }
   .prices .price-info {
@@ -640,7 +590,7 @@ footer .footer-text {
     max-height: 300px;
   }
   .pointer {
-    font-size: 1.3em !important;
+    font-size: 1.4em !important;
   }
 }
 
@@ -659,6 +609,12 @@ footer .footer-text {
     font-size: 1.5em !important;
   }
 }
+  
+@media (max-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/heroMobile.jpg");
+  }
+}
 
 @media (max-width: 992px) {
   nav a:hover {
@@ -668,6 +624,7 @@ footer .footer-text {
   nav .active {
     font-weight: bold;
   }
+}
 
 @media (max-width: 767px) {
   footer p {
@@ -682,8 +639,9 @@ footer .footer-text {
     width: 250px;
     height: 350px;
   }
+}
 
-@media (max-width: 420px) {
+  @media (max-width: 420px) {
   footer p {
     font-size: 12px;
   }

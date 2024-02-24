@@ -12,11 +12,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/myMain.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/87159df178.js" crossorigin="anonymous"></script>
 </head>
 <body>
       <nav id="navbar" class="navbar navbar-expand-lg position-absolute top-0 w-100 py-3">
-        <div class="container">
+        <div class="container position-relative">
           <a href="./index_default.html"><img class="navbar-brand logo" src="./img/LogoWork.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -45,12 +47,12 @@
             <a href="#aboutus"><i class="fas fa-chevron-down bounce-top"></i></a>
           </div>
       </header>
-      <main class="index-start">
+      <main>
         <section id="aboutus" class="aboutus py-3">
-          <div class="container">
-            <h2>Kim jesteśmy?</h2>
+          <div class="container candidate-container">
+            <h4 class="text-center">Kim jesteśmy?</h4>
             <div class="underline"></div>
-              <div class="row text-justify">
+              <div class="row">
                 <p>Jesteśmy stowarzyszeniem, które zostało założone w Łomiankach, działamy na terenie naszej gimny. Naszym celem jest aktywizacja mieszkańców naszej gminy oraz informowanie o wydarzeniach
                    kulturalnych, sportowych, politycznych, społecznych odbywających się w naszym regionie. Dostarczamy mieszkańcom wszystko o czym warto wiedzieć mieszkając w Łomiankach. Staramy
                    się być obecni na każdym ważnym wydarzeniu w naszej gminie, prowadzimy działalność wydawniczą (nasze gazetki informacyjne znajdziesz w zakładce 'gazeta'). Działamy na rzecz rozwoju
@@ -68,30 +70,26 @@
                 </div>
               </div>
             </div>
-          </section>
-          <section id="aboutus" class="aboutus py-3">
-          <div class="container">
-            <h2>Nasze założenia</h2>
+          <div class="container candidate-container">
+            <h4 class="text-center">Nasze założenia</h4>
             <div class="underline"></div>
               <div class="row text-start">
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Integracja oraz aktywizacja mieszkańców gminy łomianki do wspólnych działań na jej rzecz</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Poprawa jakości życia i bezpieczeństwa mieszkańców gminy łomianki. Reprezentowanie indywidualnych i zbiorowych interesów mieszkańców gminy łomianki wobec organów władzy i administracji państwowej i samorządowej, instytucji, organizacji, osób fizycznych i prawnych.</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Rozwój demokracji lokalnej, społeczeństwa obywatelskiego i informacyjnego</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Dążenie do zapewnienie mieszkańcom gminy łomianki niezbędnej infrastruktury technicznej</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Dążenie do podniesienia walorów gminy łomianki jako miejsca rekreacji, turystyki i wypoczynku</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Przeciwdziałanie wykluczeniu społecznemu</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Ochrona ładu przestrzennego i środowiska naturalnego</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Integracja oraz pobudzanie aktywności mieszkańców gminy łomianki w obszarze kultury i sportu</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Podtrzymywanie tradycji narodowej</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Działalność profilaktyczna związana z patologiami społecznymi</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Działalność na rzecz ochrony zdrowia, pomocy społecznej</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Przeciwdziałanie bezrobociu</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Działalność informacyjna i wydawnicza</p></div>
-                <div class="d-flex flex-row align-items-center mb-2"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="mb-0">Opracowywanie i współrealizowanie wizji rozwoju lokalnego</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Integracja oraz aktywizacja mieszkańców gminy łomianki do wspólnych działań na jej rzecz</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Poprawa jakości życia i bezpieczeństwa mieszkańców gminy łomianki. Reprezentowanie indywidualnych i zbiorowych interesów mieszkańców gminy łomianki wobec organów władzy i administracji państwowej i samorządowej, instytucji, organizacji, osób fizycznych i prawnych.</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Rozwój demokracji lokalnej, społeczeństwa obywatelskiego i informacyjnego</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Dążenie do zapewnienie mieszkańcom gminy łomianki niezbędnej infrastruktury technicznej</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Dążenie do podniesienia walorów gminy łomianki jako miejsca rekreacji, turystyki i wypoczynku</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Przeciwdziałanie wykluczeniu społecznemu</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Ochrona ładu przestrzennego i środowiska naturalnego</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Integracja oraz pobudzanie aktywności mieszkańców gminy łomianki w obszarze kultury i sportu</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Podtrzymywanie tradycji narodowej</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Działalność profilaktyczna związana z patologiami społecznymi</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Działalność na rzecz ochrony zdrowia, pomocy społecznej</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Przeciwdziałanie bezrobociu</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Działalność informacyjna i wydawnicza</p></div>
+                <div class="d-flex flex-row"><i class="fa-solid fa-hand-point-right m-0 pointer"></i><p class="pointer-margin">Opracowywanie i współrealizowanie wizji rozwoju lokalnego</p></div>
               </div>
             </div>
-          </section>
-        <section id="postulate" class="py-3" >
             <div class="container">
               <div class="row aboutus-hero-item">
                 <div class="col-lg-6 col-md-6 col-sm-12 nopadding img-container" data-aos="fade-up" data-aos-delay="200">
